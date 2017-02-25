@@ -2,7 +2,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \title{\textbf{homework-01}}
-\author{our group name here}
+\author{SixGod}
 \date{\today}
 
 \begin{document}
@@ -72,7 +72,13 @@ In this situation, all coins are on white (or black) square.
 But we have already proved that every coin's color will not change, so this pattern can never be achieved.
 
 \textbf{Exercise 1.6.} \\
-...
+From the problem 1.5, we already know that the color of the coin will never change. So, if we want the two coins move to the same position, they must have same color, we might as well assume that color is black.\\
+Like problem 1.5,assume that in the begning the pos are (0,0),(0,1),(1,0),(1,1).\\
+        \includegraphics[scale=1]{1_6_1.png}\\
+The black ones are (0,0),(1,1). Consider their x-coordinates, however we jump the coin, their x-coordinate will be 2k and 2m+1 (m,k are integers),the sum is 2(k+m)+1,which is an odd number\\
+If we can move them to a same position, the sum of x-coordinate will be 2n (n is a integer),which is an even number.Obviously, it is contradictory to the conclusion we get above. If the color is white, it will be the same way to prove it.\\
+So, we cannot achieve a position in which two coins are at the same position.\\
+
 
 \textbf{Exercise 1.7.} \\
 ...
