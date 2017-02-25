@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \title{\textbf{homework-01}}
 \author{our group name here}
 \date{\today}
@@ -41,7 +42,28 @@ So it is obvious that we cannot tile this damaged chessboard.\\
 \textbf{Exercise 1.5.} \\
 A coin is at a position $(x,y)\in\mathbf{R}^2$ .\\
 we assume that in the begning the pos are (0,0),(0,1),(1,0),(1,1).\\
-
+\includegraphics[scale=1]{1_5_1.png}\\
+$(u,v)+(u,v)-(x,y)=(2u-x,2v-y)$\\
+if $(u,v),(x,y)\in\mathbf{Z}^2$ , then $(2u-x,2v-y)\in\mathbf{Z}^2$.\\
+Thus the coins will always be on an integer position.
+Now let (x,y) be the position of a coin,\\
+if $(x,y)\in\mathbf{Z}^2$, we can say coin is
+$
+\left\{\begin{array}{ll}
+white & \textrm{while x+y is odd}\\
+black & \textrm{while x+y is even}
+\end{array} \right.
+$
+.\\
+So, now the color of (x,y) is $x+y\mod2$, the color of (2u-x,2u-y) is $(2u-x)+(2v-y)\mod2=(x+y)\mod2$
+,they are on the same color square.\\
+Considering that, we put four coins on a chessboard like this:
+\includegraphics[scale=0.8]{1_5_2.png}\\
+We can see there are two coins on white square and two on black square.\\
+And if the side length of coin square becomes 2, it will look like this:
+\includegraphics[scale=0.8]{1_5_3.png}\\
+In this situation, all coins are on white (or black) square. 
+But we have already proved that every coin's color will not change, so this pattern can never be achieved.
 
 \textbf{Exercise 1.6.} \\
 ...
