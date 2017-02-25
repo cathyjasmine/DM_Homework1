@@ -43,10 +43,10 @@ distance between the two coins.
 
 \textbf{Exercise 1.5.} \\
 A coin is at a position $(x,y)\in\mathbf{R}^2$ .\\
-we assume that in the begning the pos are (0,0),(0,1),(1,0),(1,1).\\
+we assume that in the beginning the positions are (0,0),(0,1),(1,0),(1,1).\\
 \includegraphics[scale=1]{1_5_1.png}\\
 $(u,v)+(u,v)-(x,y)=(2u-x,2v-y)$\\
-if $(u,v),(x,y)\in\mathbf{Z}^2$ , then $(2u-x,2v-y)\in\mathbf{Z}^2$.\\
+If $(u,v),(x,y)\in\mathbf{Z}^2$ , then $(2u-x,2v-y)\in\mathbf{Z}^2$.\\
 Thus the coins will always be on an integer position.
 Now let (x,y) be the position of a coin,\\
 if $(x,y)\in\mathbf{Z}^2$, we can say coin is
@@ -57,7 +57,7 @@ black & \textrm{while x+y is even}
 \end{array} \right.
 $
 .\\
-So, now the color of (x,y) is $x+y\mod2$, the color of (2u-x,2u-y) is $(2u-x)+(2v-y)\mod2=(x+y)\mod2$
+So, now the color of (x,y) is $(x+y)\mod2$, the color of (2u-x,2u-y) is $[(2u-x)+(2v-y)]\mod2=(x+y)\mod2$
 ,they are on the same color square.\\
 Considering that, we put four coins on a chessboard like this:
 \includegraphics[scale=0.8]{1_5_2.png}\\
@@ -71,7 +71,19 @@ But we have already proved that every coin's color will not change, so this patt
 ...
 
 \textbf{Exercise 1.7.} \\
-...
+If we can turn the origin square into a pattern, we can also turn this pattern
+into a square whose side length is 1 by undoing every step reversely. \\
+So now we assume that we have a larger square of side length $a(a>1)$ 
+and the positions are $(0,0),(0,a),(a,a),(a,0).$\\
+\includegraphics[scale=1]{1_5_1.png}\\
+$(u,v)+(u,v)-(x,y)=(2u-x,2v-y)$\\
+If $(u,v),(x,y)\in\mathbf{Z}^2$ , then $(2u-x,2v-y)\in\mathbf{Z}^2$.\\
+Thus the coins will always be on an integer position.
+Now let (x,y) be the position of a coin, if $x\mod a=0$ and $u\mod a=0$ then $(2u-x)\mod a=0$
+and so it is with vertical ordinate. It means that whatever we do, the distance between any two
+coins will be at least $a$ (Two coins cannot be at the same position, which is proved by us in 
+Exercise 1.6.). In this situation, we will never get a smaller square. Meanwhile, it proves that 
+we can never get a larger square.
 
 \textbf{Exercise 1.8.} \\
 ...
